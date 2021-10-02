@@ -6,7 +6,7 @@
 Defines a family of algorithms, encapsulates each one, and makes them interchangeable. Strategy lets the algorithm vary 
 independently from clients that use it.
 
-## Example explanation
+## Example
 
 Consider 
 * a **IPerson** interface that represents a person, 
@@ -191,6 +191,12 @@ Hi, I'm a father
 I don't know how to go fishing,
 I pay everything with crypto currencies. 
 ```
+## Object Oriented Principles enforced
+
+* Encapsulate what varies
+* Favor composition over inheritance
+* Program to intefaces, not implementations
+
 
 ## Class diagram
 
