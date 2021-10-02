@@ -6,6 +6,6 @@ package com.stefanobiasu.designpatterns.strategy.strategies.buy;
 public class CryptoBuyStrategy implements IBuyStrategy {
     @Override
     public void buy() {
-        System.out.println("I pay everything with crypto currencies,");
+        System.out.println("I pay everything with crypto currencies.");
     }
 }

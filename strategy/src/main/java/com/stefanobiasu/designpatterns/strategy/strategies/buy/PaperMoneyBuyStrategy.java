@@ -6,6 +6,6 @@ package com.stefanobiasu.designpatterns.strategy.strategies.buy;
 public class PaperMoneyBuyStrategy implements IBuyStrategy {
     @Override
     public void buy() {
-    System.out.println("I pay only with paper money,");
+    System.out.println("I pay only with paper money.");
     }
 }
