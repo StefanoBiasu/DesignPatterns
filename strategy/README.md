@@ -157,21 +157,25 @@ public class Son extends Person {
 Let's print initial situation, and final situation after strategy change:
 
 ```java
-        var grandfather = new Grandfather();
-        var father = new Father();
-        var son = new Son();
-        Stream.of(grandfather, father, son).forEach(person -> {
-            person.greet();
-            person.fishing();
-            person.buy();
-        });
-
-        // Let's change the father buy strategy, enabling crypto payments
-        System.out.println("Changing father's buy strategy ... ");
-        father.setBuyStrategy(new CryptoBuyStrategy());
-        father.greet();
-        father.fishing();
-        father.buy();
+           public static void main(String[] args) {
+               var grandfather = new Grandfather();
+               var father = new Father();
+               var son = new Son();
+               Stream.of(grandfather, father, son).forEach(person -> {
+                  presentPerson(person);
+               });
+       
+               // Let's change the father buy strategy, enabling crypto payments
+               System.out.println("Changing father's buy strategy ... ");
+               father.setBuyStrategy(new CryptoBuyStrategy());
+               presentPerson(father);
+           }
+       
+           private static void presentPerson(Person person) {
+               person.greet();
+               person.fishing();
+               person.buy();
+           }
 ```
 
 Print result:
