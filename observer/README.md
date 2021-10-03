@@ -82,7 +82,7 @@ public interface IPriceDataProvider {
     }
 
     /**
-     * Returns the update value to the observer, whenever observer needs it.
+     * Returns the updated value to the observer, whenever needed.
      *
      * @return The price
      */
@@ -90,7 +90,7 @@ public interface IPriceDataProvider {
 }
 ```
 
-Let's create providers and observers, check the obervers behavior and try to unregister an observer:  
+Let's create providers and observers, check the observers behavior and try to unregister an observer:  
 
 ```java
         // Create the providers
@@ -110,7 +110,7 @@ Let's create providers and observers, check the obervers behavior and try to unr
         bitcoinProvider.register(bitcoinObserver);
         ethereumProvider.register(ethereumObserver);
 
-        //Wait a second and unregister ethereum observer
+        //Wait a second and unregister bitcoin observer
         Thread.sleep(1000);
         bitcoinProvider.unregister(bitcoinObserver);
 

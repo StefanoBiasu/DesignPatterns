@@ -45,7 +45,7 @@ public interface IPriceDataProvider {
     }
 
     /**
-     * Returns the update value to the observer, whenever observer needs it.
+     * Returns the updated value to the observer, whenever needed.
      *
      * @return The price
      */

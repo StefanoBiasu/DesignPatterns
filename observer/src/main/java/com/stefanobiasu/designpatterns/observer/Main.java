@@ -29,7 +29,7 @@ public class Main {
         bitcoinProvider.register(bitcoinObserver);
         ethereumProvider.register(ethereumObserver);
 
-        //Wait a second and unregister ethereum observer
+        //Wait a second and unregister bitcoin observer
         Thread.sleep(1000);
         bitcoinProvider.unregister(bitcoinObserver);
 
