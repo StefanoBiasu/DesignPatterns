@@ -122,48 +122,42 @@ Print result. We can notice that when Bitcoin observer get removed, no notificat
 the provider will stop a couple of seconds after.
 
 ```
-Bitcoin price is: 38549
-Ethereum price is: 2390
-Bitcoin price is: 10966
-Bitcoin price is: 27594
-Ethereum price is: 1727
-Bitcoin price is: 27798
-Bitcoin price is: 14516
-Bitcoin price is: 10052
-Bitcoin price is: 22843
-Bitcoin price is: 32417
-Bitcoin price is: 39851
-Ethereum price is: 633
-Bitcoin price is: 20580
-Bitcoin price is: 30189
-Bitcoin price is: 25905
-Bitcoin price is: 7724
-Bitcoin price is: 17197
-Bitcoin price is: 4780
-Bitcoin price is: 35209
-Ethereum price is: 2172
-Observer unregistered: com.stefanobiasu.designpatterns.observer.observers.BitcoinPriceObserver@1a407d53
-Ethereum price is: 2146
-Ethereum price is: 1145
-Ethereum price is: 1893
-Ethereum price is: 2897
-Ethereum price is: 540
-Ethereum price is: 2824
-Ethereum price is: 193
-Ethereum price is: 1417
-Ethereum price is: 2998
-Ethereum price is: 1358
-Ethereum price is: 908
-Ethereum price is: 2954
-Ethereum price is: 2952
-Ethereum price is: 2619
-Ethereum price is: 2296
-Ethereum price is: 588
-Ethereum price is: 2508
-Ethereum price is: 2807
-Ethereum price is: 2801
-Completed to provide ethereum price samples
-Completed to provide bitcoin price samples
+Observer registered: com.stefanobiasu.designpatterns.observer.observers.BitcoinPriceObserver@4cb2c100
+Observer registered: com.stefanobiasu.designpatterns.observer.observers.EthereumPriceObserver@6fb554cc
+Bitcoin price is: 37115
+Ethereum price is: 786
+Bitcoin price is: 12657
+Bitcoin price is: 34038
+Bitcoin price is: 19135
+Bitcoin price is: 14672
+Bitcoin price is: 861
+Ethereum price is: 386
+Bitcoin price is: 30015
+Bitcoin price is: 27433
+Bitcoin price is: 33215
+Bitcoin price is: 31584
+Bitcoin price is: 7179
+Bitcoin price is: 954
+Bitcoin price is: 16918
+Ethereum price is: 1091
+Bitcoin price is: 10475
+Bitcoin price is: 24716
+Observer unregistered: com.stefanobiasu.designpatterns.observer.observers.BitcoinPriceObserver@4cb2c100
+Ethereum price is: 2311
+Ethereum price is: 665
+Ethereum price is: 1012
+Ethereum price is: 1229
+Ethereum price is: 1161
+Ethereum price is: 1598
+Ethereum price is: 1782
+Ethereum price is: 2900
+Ethereum price is: 985
+Ethereum price is: 2368
+Ethereum price is: 169
+Ethereum price is: 1999
+Ethereum price is: 1929
+Finished to provide bitcoin price samples
+Finished to provide ethereum price samples
 
 ```
 ## Object Oriented Principles enforced

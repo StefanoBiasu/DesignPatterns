@@ -1,6 +1,6 @@
 package com.stefanobiasu.designpatterns.observer.observers;
 
-import com.stefanobiasu.designpatterns.observer.data.IPriceDataProvider;
+import com.stefanobiasu.designpatterns.observer.providers.IPriceDataProvider;
 import lombok.NonNull;
 
 /**

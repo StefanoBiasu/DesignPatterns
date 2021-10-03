@@ -1,4 +1,4 @@
-package com.stefanobiasu.designpatterns.observer.data;
+package com.stefanobiasu.designpatterns.observer.providers;
 
 import java.util.Random;
 

@@ -1,4 +1,4 @@
-package com.stefanobiasu.designpatterns.observer.data;
+package com.stefanobiasu.designpatterns.observer.providers;
 
 import com.stefanobiasu.designpatterns.observer.observers.IPriceObserver;
 
@@ -7,12 +7,12 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Bitcoin data provider.
+ * Ethereum data provider.
  */
-public class BitcoinDataProvider implements IPriceDataProvider {
+public class EthereumDataProvider implements IPriceDataProvider {
 
     private List<IPriceObserver> observers = new LinkedList<>();
-    private int bitcoinPrice = 0;
+    private int ethereumPrice = 0;
 
     /**
      * Util method to simulate the price fluctuation in time read by the provider.
@@ -23,14 +23,14 @@ public class BitcoinDataProvider implements IPriceDataProvider {
         return () -> {
             while (true) {
                 try {
-                    Thread.sleep(new Random().nextInt(100));
-                    bitcoinPrice = CryptoDataSource.getBitcoinPrice();
+                    Thread.sleep(new Random().nextInt(500));
+                    ethereumPrice = CryptoDataSource.getEthereumPrice();
                     notifyObservers();
                 } catch (InterruptedException exception) {
                     break;
                 }
             }
-            System.out.println("Finished to provide bitcoin price samples");
+            System.out.println("Finished to provide ethereum price samples");
         };
     }
 
@@ -41,6 +41,6 @@ public class BitcoinDataProvider implements IPriceDataProvider {
 
     @Override
     public int getPrice() {
-        return bitcoinPrice;
+        return ethereumPrice;
     }
 }

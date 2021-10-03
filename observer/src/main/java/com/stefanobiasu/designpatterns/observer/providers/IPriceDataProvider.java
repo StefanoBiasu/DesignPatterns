@@ -1,4 +1,4 @@
-package com.stefanobiasu.designpatterns.observer.data;
+package com.stefanobiasu.designpatterns.observer.providers;
 
 import com.stefanobiasu.designpatterns.observer.observers.IPriceObserver;
 import lombok.NonNull;
@@ -24,6 +24,7 @@ public interface IPriceDataProvider {
     default void register(@NonNull IPriceObserver observer) {
         getObservers().add(observer);
         observer.setDataProvider(this);
+        System.out.println("Observer registered: " + observer);
     }
 
     /**

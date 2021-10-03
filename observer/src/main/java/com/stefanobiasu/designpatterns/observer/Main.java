@@ -1,7 +1,7 @@
 package com.stefanobiasu.designpatterns.observer;
 
-import com.stefanobiasu.designpatterns.observer.data.BitcoinDataProvider;
-import com.stefanobiasu.designpatterns.observer.data.EthereumDataProvider;
+import com.stefanobiasu.designpatterns.observer.providers.BitcoinDataProvider;
+import com.stefanobiasu.designpatterns.observer.providers.EthereumDataProvider;
 import com.stefanobiasu.designpatterns.observer.observers.BitcoinPriceObserver;
 import com.stefanobiasu.designpatterns.observer.observers.EthereumPriceObserver;
 import com.stefanobiasu.designpatterns.observer.observers.IPriceObserver;
