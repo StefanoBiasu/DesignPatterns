@@ -204,4 +204,4 @@ I pay everything with crypto currencies.
 
 ## Class diagram
 
-![alt text](./etc/strategy.png "Strategy")
+![strategy](./etc/strategy.png "Strategy")

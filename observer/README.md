@@ -169,4 +169,4 @@ Finished to provide ethereum price samples
 
 ## Class diagram
 
-![alt text](./etc/observer.png "Observer")
+![observer](./etc/observer.png "Observer")

@@ -224,4 +224,4 @@ Item deleted from remote server
 
 ## Class diagram
 
-![alt text](./etc/observer.png "Observer")
+![decorator](./etc/decorator.png "Decorator")
