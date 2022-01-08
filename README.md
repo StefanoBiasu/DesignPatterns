@@ -6,3 +6,5 @@ Here a collection of the most popular Java Design Patterns.
 * Strategy pattern
 * Observer pattern
 * Decorator pattern
+* Factory pattern
+* Abstract factory pattern

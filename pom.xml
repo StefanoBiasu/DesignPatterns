@@ -11,6 +11,8 @@
         <module>strategy</module>
         <module>observer</module>
         <module>decorator</module>
+        <module>factory</module>
+        <module>abstractFactory</module>
     </modules>
     <packaging>pom</packaging>
     <dependencies>
