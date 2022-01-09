@@ -1,11 +1,11 @@
-package com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.apple;
+package com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.samsung;
 
 import com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.IComponentsFactory;
 
 /**
- * Apple implementation of component factory.
+ * Apple implementation of components factory.
  */
-public class AppleComponentFactory implements IComponentsFactory {
+public class SamsungComponentsFactory implements IComponentsFactory {
 
     @Override
     public String getCPU() {

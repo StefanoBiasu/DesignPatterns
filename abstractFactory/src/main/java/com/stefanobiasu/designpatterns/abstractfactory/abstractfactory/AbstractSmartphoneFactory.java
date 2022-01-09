@@ -1,19 +1,19 @@
 package com.stefanobiasu.designpatterns.abstractfactory.abstractfactory;
 
-import com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.apple.AppleComponentFactory;
-import com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.samsung.SamsungComponentFactory;
+import com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.apple.AppleComponentsFactory;
+import com.stefanobiasu.designpatterns.abstractfactory.abstractfactory.samsung.SamsungComponentsFactory;
 import com.stefanobiasu.designpatterns.abstractfactory.smartphone.ISmartphone;
 
 /**
- * Abstract implementation of {@link ISmartphoneFactory}, that retrieves the componentFactory.
+ * Abstract implementation of {@link ISmartphoneFactory}, that retrieves the componentsFactory.
  */
 public abstract class AbstractSmartphoneFactory implements ISmartphoneFactory {
 
     protected IComponentsFactory getComponentFactory(String brand) {
         if (brand.equals(APPLE_COMPONENTS)) {
-            return new AppleComponentFactory();
+            return new AppleComponentsFactory();
         } else if (brand.equals(SAMSUNG_COMPONENTS)) {
-            return new SamsungComponentFactory();
+            return new SamsungComponentsFactory();
         }
         throw new RuntimeException("component factory not found");
     }
