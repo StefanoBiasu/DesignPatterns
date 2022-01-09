@@ -107,6 +107,8 @@ Let's check the smartphone classes created by the factory:
 
 * Encapsulate what varies
 * Program to intefaces, not implementations
+* Dependency inversion principles: high level components should not depend on low level components. Instead, both shuold
+depend on abstractions.
 
 ## Class diagram
 
