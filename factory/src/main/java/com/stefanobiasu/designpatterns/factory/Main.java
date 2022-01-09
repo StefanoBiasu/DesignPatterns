@@ -15,12 +15,14 @@ public class Main {
 
         ISmartphoneFactory factory = new AppleSmartphoneFactory();
 
-        final ISmartphone _4_4_smartphone = factory.createSmartphone(_4_4_INCHES);
-        System.out.println("Apple ISmartPhone implementation of 4.4 inches smartphone:" + _4_4_smartphone.getClass());
-        assert _4_4_smartphone.getClass() == Apple_4_4_Smartphone.class;
+        final ISmartphone apple_4_4_smartphone = factory.createSmartphone(_4_4_INCHES);
+        System.out.println("Apple ISmartPhone implementation of 4.4 inches smartphone:" + apple_4_4_smartphone.getClass());
+        assert apple_4_4_smartphone.getClass() == Apple_4_4_Smartphone.class;
+        factory.present(apple_4_4_smartphone);
 
-        final ISmartphone _6_7_smartphone = factory.createSmartphone(_6_7_INCHES);
-        System.out.println("Apple ISmartPhone implementation of 6.7 inches smartphone:" + _6_7_smartphone.getClass());
-        assert _6_7_smartphone.getClass() == Apple_6_7_Smartphone.class;
+        final ISmartphone apple_6_7_smartphone = factory.createSmartphone(_6_7_INCHES);
+        System.out.println("Apple ISmartPhone implementation of 6.7 inches smartphone:" + apple_6_7_smartphone.getClass());
+        assert apple_6_7_smartphone.getClass() == Apple_6_7_Smartphone.class;
+        factory.present(apple_6_7_smartphone);
     }
 }

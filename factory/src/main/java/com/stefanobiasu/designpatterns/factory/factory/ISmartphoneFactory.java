@@ -19,4 +19,14 @@ public interface ISmartphoneFactory {
      */
     ISmartphone createSmartphone(String size);
 
+    /**
+     * Phone presentation.
+     *
+     * @param phone the phone to present.
+     */
+    default void present(ISmartphone phone) {
+        phone.ring();
+        phone.makePhoto();
+        phone.sendMessage("test");
+    }
 }
