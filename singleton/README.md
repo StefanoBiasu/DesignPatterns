@@ -68,7 +68,7 @@ public enum EnumSingleton {
 
     ENUM_SINGLETON_INSTANCE;
 
-    String someValue;
+    private String someValue;
 
     public String getSomeValue() {
         return someValue;
