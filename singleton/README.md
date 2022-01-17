@@ -29,7 +29,8 @@ An issue that can arise here is the possibility to run the code in a multithread
 possible that two threads execute the same code at the same time, evaluating if "(instance == null)" both as true, thus 
 generating two instances of a Singleton. The way to avoid it is to synchronize the creation of the instance with a 
 syncrhonized block with the lock being the same Singleton class. Also, since synchronized code is cumbersome, it's better
-to optimize it checking beforehand whether the instance is already available:
+to optimize it checking beforehand whether the instance is already available, introducing a double check on the instance
+ nullability:
 
 ```java
 /**
@@ -55,6 +56,29 @@ public class DoubleCheckedLazyLoadedSingleton {
 }
  ```
 
+A final note is that this code still does not prevent a creation of multiple instances of a Singleton class. In fact, 
+Serialization and Reflection can still access to the constructor. Sacrificing the lazy loading of the Singleton, it's 
+possible to have a fully compliant Singleton with Enums. Enums have internal mechanisms for instantiation, unaccessible 
+even with reflection or serialization:
+```java
+/**
+ * Enum implementation of Singleton.
+ */
+public enum EnumSingleton {
+
+    ENUM_SINGLETON_INSTANCE;
+
+    String someValue;
+
+    public String getSomeValue() {
+        return someValue;
+    }
+
+    public void setSomeValue(String someValue) {
+        this.someValue = someValue;
+    }
+}
+```
 
 Test the different implementations:
 ```java
