@@ -13,6 +13,7 @@
         <module>decorator</module>
         <module>factory</module>
         <module>abstractFactory</module>
+        <module>singleton</module>
     </modules>
     <packaging>pom</packaging>
     <dependencies>

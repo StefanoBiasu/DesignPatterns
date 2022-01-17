@@ -8,3 +8,4 @@ Here a collection of the most popular Java Design Patterns.
 * Decorator pattern
 * Factory pattern
 * Abstract factory pattern
+* Singleton
